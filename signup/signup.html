@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+     <script src="signup.js"></script> 
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>Signup Form</header>
+        <form  id="signup-form" action="signup.php" method="post">
+            <div class="field full-name">
+                <div class="input-area">
+                    <input name="username" type="text" placeholder="User Name">
+                </div>
+            </div>
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" name="email" placeholder="Email Address">
+                </div> 
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" name="password" id="SignPass" placeholder="Password">
+                </div>
+            </div>
+            <div class="field confirm-password">
+                <div class="input-area">
+                    <input type="password" name="Confirmpassword" placeholder="Confirm Password">
+                </div>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+        <div class="login-txt">Already a member? <a href="login.html">Login</a></div>
+    </div>
+
+     <div id="res"></div> 
+
+  
+
+</body>
+
+</html>
